@@ -1,0 +1,84 @@
+*,
+::before,
+::after {
+    border-width: 0;
+    border-style: solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+ul::marker {
+    display: none;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+body {
+    appearance: none;
+    background-color: #e5e7eb;
+    margin-left: 0.5rem;
+}
+
+#dates {
+    margin-bottom: 0.25rem;
+}
+
+.container {
+    min-width: 12rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+input {
+    border-width: 1px;
+    border-radius: 0.375rem;
+    padding: 0.375rem;
+    line-height: 1.25;
+}
+
+.control {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+button {
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    background-color: rgb(2 132 199);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+#button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: rgb(2 132 199);;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid rgb(2 132 199);;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
