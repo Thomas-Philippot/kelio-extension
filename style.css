@@ -37,7 +37,7 @@ body {
 }
 
 #dates {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .container {
@@ -59,7 +59,7 @@ input {
 }
 
 button {
-    margin-top: 0.25rem;
+    margin: 0.25rem;
     padding: 0.5rem;
     border-radius: 0.375rem;
     background-color: rgb(2 132 199);
@@ -68,7 +68,7 @@ button {
 }
 
 #button {
-    padding: 19px 39px 18px 39px;
+    padding: 0.25rem;
     color: #FFF;
     background-color: rgb(2 132 199);;
     font-size: 18px;

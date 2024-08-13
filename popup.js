@@ -1,16 +1,17 @@
 // Initialize button
-let button = document.getElementById("button")
-button.addEventListener("click", async () => {
-
-  chrome.tabs.create({ url: 'https://mylab.kelio.io' });
-  return
-
+let insert = document.getElementById("insert")
+insert.addEventListener("click", async () => {
   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
     function: insertDates,
   })
+})
+
+let open = document.getElementById("open")
+open.addEventListener("click", async () => {
+  await chrome.tabs.create({ url: 'https://mylab.kelio.io' });
 })
 
 chrome.storage.sync.get("dates", ({ dates }) => {
