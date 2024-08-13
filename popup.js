@@ -45,6 +45,12 @@ function insertDates() {
         continue
       }
 
+      // ignore already filled fields
+      const isFilled = row.cells[0].querySelector('.etatGtp') === null
+      if (isFilled) {
+        continue
+      }
+
       // ignore weekends
       let day = row.cells[0].querySelector('.etatGtp').textContent.trim()
       if (day === 'Di'|| day === 'Sa') {
@@ -59,8 +65,10 @@ function insertDates() {
           continue
         }
         let input = col.querySelector('input[type=text]')
-        input.value = dates[index]
-        index++
+        if (input !== null) {
+          input.value = dates[index]
+          index++
+        }
       }
     }
   })
