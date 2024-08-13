@@ -1,6 +1,10 @@
 // Initialize button
 let button = document.getElementById("button")
 button.addEventListener("click", async () => {
+
+  chrome.tabs.create({ url: 'https://mylab.kelio.io' });
+  return
+
   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
   chrome.scripting.executeScript({
